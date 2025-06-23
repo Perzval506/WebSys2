@@ -1,0 +1,3 @@
+--first name, last name, year graduated, course graduated, gender, current job, and current employer.
+--In addition to these attributes, consider adding the date when the alumni was added as well. 
+--(Use the python module datetime). The following CRUD functionalities / use cases should be present in your system
