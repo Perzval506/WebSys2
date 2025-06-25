@@ -1,1 +1,17 @@
-include('config/db.php');//mao ni pang connect sa file
+<?php
+include('config.php');
+
+$id = $_GET['id'];
+
+$qry = "DELETE FROM alumni WHERE id = '$id';";
+
+if ($conn->query($qry) === TRUE) {
+    echo "Alumni deleted successfully!";
+    header("Location: ../views/list.php");
+    exit();
+} else {
+    echo "MySQLi error: " . $conn->error;
+}
+
+$conn->close();
+?>
