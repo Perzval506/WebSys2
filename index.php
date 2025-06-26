@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Alumni Tracer System</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Alumni Tracer System</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+  <link rel="stylesheet" href="/simple/assets/css/style.css">
 </head>
-<body class="bg-light">
-    <div class="container py-5">
-        <h1 class="text-center">Welcome to the Alumni Tracer System</h1>
-        <p class="text-center">Click the button below to view all alumni.</p>
-        <div class="text-center">
-            <a href="views/list.php" class="btn btn-primary">Go to Alumni List</a>
-        </div>
+<body>
+ 
+  <div class="hero-wrapper">
+    <div class="card-liquid text-center fade-in">
+      <h1>Alumni Tracer System</h1>
+      <p class="lead">Track your graduates in a crisp, friendly interface.</p>
+      <a href="views/list.php" class="btn-hero">Get Started</a>
     </div>
+  </div>
 </body>
 </html>
