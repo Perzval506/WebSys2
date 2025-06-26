@@ -1,5 +1,5 @@
 <?php
-include('config.php');
+include('C:\xampp\htdocs\alumni_tracker\config.php');
 
 $id = $_POST['id'];
 $first_name = $_POST['first_name'];
