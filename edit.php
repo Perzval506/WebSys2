@@ -1,5 +1,5 @@
 <?php
-include('config.php');
+include('C:\xampp\htdocs\alumni_tracker\config.php');
 
 $id = $_GET['id'];
 $result = $conn->query("SELECT * FROM alumni WHERE id = $id");
