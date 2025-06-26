@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit('❌ Invalid request method.');
 }
 
-include('config.php');
+include('C:\xampp\htdocs\alumni_tracker\config.php');
 
 
 $first_name = $_POST['first_name'] ?? '';
