@@ -68,12 +68,12 @@ $alumni = $res->fetch_all(MYSQLI_ASSOC);
           <?php foreach ($alumni as $a): ?>
           <tr>
             <td><?= $a['id'] ?></td>
-            <td><?= htmlspecialchars($a['first_name'].' '.$a['last_name']) ?></td>
+            <td><?= $a['first_name'].' '.$a['last_name']) ?></td>
             <td><?= $a['year_graduated'] ?></td>
-            <td><?= htmlspecialchars($a['course_graduated']) ?></td>
+            <td><?= $a['course_graduated']) ?></td>
             <td><?= $a['gender'] ?></td>
-            <td><?= htmlspecialchars($a['current_job']) ?></td>
-            <td><?= htmlspecialchars($a['current_employer']) ?></td>
+            <td><?= $a['current_job']) ?></td>
+            <td><?= $a['current_employer']) ?></td>
             <td><?= $a['date_added'] ?></td>
             <td class="actions">
               <a href="edit.php?id=<?= $a['id'] ?>" class="btn-ghost btn-sm mb-1">Edit</a>
