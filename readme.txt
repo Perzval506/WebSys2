@@ -24,7 +24,7 @@ The system also records the date when each alumni entry was added to the databas
 TECHNOLOGIES USED:
 - PHP (for server-side logic)
 - MySQL (for the database)
-- HTML & Bootstrap (for the frontend UI)
+- HTML & CSS (for the frontend UI)
 - XAMPP (as the local development environment)
 
 HOW TO INSTALL & RUN:
