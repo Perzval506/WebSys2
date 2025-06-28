@@ -21,7 +21,8 @@ $current_employer = $_POST['current_employer'] ?? '';
 if (
     empty($first_name) || empty($last_name) || empty($year_graduated) ||
     empty($course_graduated) || empty($gender) || empty($current_job) || empty($current_employer)
-) {
+) 
+{
     exit('❌ Missing required fields.');
 }
 
@@ -29,7 +30,9 @@ $qry = "
     INSERT INTO alumni (
         first_name, last_name, year_graduated, course_graduated,
         gender, current_job, current_employer, date_added
-    ) VALUES (
+    ) 
+    VALUES 
+    (
         '$first_name', '$last_name', '$year_graduated', '$course_graduated',
         '$gender', '$current_job', '$current_employer', NOW()
     );
@@ -39,7 +42,9 @@ $qry = "
 if ($conn->query($qry) === TRUE) {
     header("Location: ../views/list.php");
     exit();
-} else {
+} 
+else 
+{
     echo "MySQLi error: " . $conn->error;
 }
 
